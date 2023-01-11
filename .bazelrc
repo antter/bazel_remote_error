@@ -1,0 +1,8 @@
+build --remote_download_minimal
+build --extra_execution_platforms=//:linux_amd_platform
+build --platforms=//:linux_amd_platform
+build --define=EXECUTOR=remote
+build --action_env=BAZEL_DO_NOT_DETECT_CPP_TOOLCHAIN=1
+# put your own remote build flags here
+build --remote_executor=
+build --remote_cache=
